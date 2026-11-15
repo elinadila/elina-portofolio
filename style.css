@@ -1,0 +1,503 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* WARNA DAN FONT DASAR */
+body {
+    background-color: #F5F3EB;
+    color: #344E41;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* NAVIGASI */
+header {
+    background-color: #344E41;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #F5F3EB;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #D6C7A1;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    padding: 70px 10%;
+}
+
+.foto-profil {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #A3B18A;
+    box-shadow: 0 8px 25px rgba(52, 78, 65, 0.15);
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.greeting {
+    color: #588157;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero-text h1 span {
+    color: #588157;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+}
+
+/* TOMBOL */
+.button {
+    display: inline-block;
+    background-color: #588157;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #344E41;
+}
+
+/* BAGIAN KONTEN */
+.content-section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.content-section:nth-child(odd) {
+    background-color: #E9EDDF;
+}
+
+.content-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #344E41;
+}
+
+.content-section p {
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+/* KEAHLIAN */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 22px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    font-weight: bold;
+    color: #588157;
+}
+
+/* LINK KONTAK */
+.content-section a {
+    color: #588157;
+    text-decoration: none;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: #344E41;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 7%;
+        gap: 30px;
+    }
+
+    .foto-profil {
+        width: 210px;
+        height: 210px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .content-section {
+        padding: 45px 7%;
+    }
+}
+
+/* SUBHEADING */
+.subheading {
+    margin-top: 50px;
+}
+
+/* EXPERIENCE LIST */
+.info-card ul {
+    padding-left: 20px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.info-card li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* CARD RESPONSIVE */
+.info-card {
+    flex: 1 1 280px;
+    max-width: 380px;
+}
+
+/* NAVIGATION RESPONSIVE */
+.nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+}
+/* Mencegah halaman melebar ke samping */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Merapikan menu navigasi agar pas di layar laptop */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 5%;
+    gap: 15px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.nav-links a {
+    font-size: 14px;
+}
+
+/* Penyesuaian otomatis untuk layar HP / tablet (di bawah 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+/* Memastikan semua bagian utama ikut berubah gelap */
+body.dark-mode,
+body.dark-mode main,
+body.dark-mode section,
+body.dark-mode .hero,
+body.dark-mode .hero-section {
+    background-color: #0f172a !important;
+    background: #0f172a !important;
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li {
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .card {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+#theme-toggle {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#theme-toggle:hover {
+    background-color: #334155;
+}
+/* Menengahkan setiap section dan membatasi lebarnya agar rapi */
+section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Memastikan judul section (seperti Internship Experience) berada di tengah */
+section h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Menengahkan kotak/item pengalaman kerja & magang */
+.experience-item,
+.internship-item,
+.item-cv,
+.card {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
+/* Merapikan daftar poin (bullet list) agar tetap sejajar dan enak dibaca di tengah */
+section ul {
+    display: inline-block;
+    text-align: left;
+    margin: 15px auto 0 auto;
+    padding-left: 20px;
+}
+/* Menyamakan font utama untuk seluruh halaman */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Sesuaikan dengan font yang Anda pakai */
+  color: #333;
+}
+
+/* Mengatur judul utama bagian (Work Experience) */
+#experience h2, .experience-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Mengatur nama perusahaan/instansi */
+#experience h3, .experience-section h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* Mengatur jabatan/posisi */
+#experience h4, .experience-section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+/* Mengatur periode tahun dan daftar deskripsi pekerjaan */
+#experience p, #experience li,
+.experience-section p, .experience-section li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+/* Terapkan ke seluruh elemen di semua bagian (About, Education, Work, Internship) */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Semua judul bagian utama (About Me, Work Experience, Internship Experience) */
+section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Semua nama instansi/perusahaan/sekolah */
+section h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Semua jabatan/posisi/jurusan */
+section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+/* Semua paragraf, periode tahun, dan daftar poin (bullet points) */
+section p,
+section li {
+  font-size: 16px !important; /* !important memastikan tidak tertimpa gaya lain */
+  font-weight: 400;
+}
+/* 1. Pengaturan Global agar tidak ada elemen yang terpotong ke samping */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* 2. Penyesuaian Khusus Tampilan Layar HP (lebar maksimal 768px) */
+@media (max-width: 768px) {
+  /* Merapikan Navbar di layar HP agar menu tidak bertumpuk */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap; /* Menu otomatis turun ke baris bawah jika layar sempit */
+    justify-content: center;
+    gap: 8px 12px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  #theme-toggle {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* Merapikan ukuran teks & jarak konten di layar HP */
+  section {
+    padding: 28px 18px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  section h3 {
+    font-size: 18px;
+  }
+
+  section p,
+  section li {
+    font-size: 15px !important;
+  }
+}
+<button id="theme-toggle">🌙 Dark Mode</button>
