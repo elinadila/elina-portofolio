@@ -86,8 +86,6 @@ header {
     color: var(--sage);
 }
 
-/* DARK MODE BUTTON */
-
 #theme-toggle {
     background: var(--secondary);
     color: white;
@@ -371,52 +369,150 @@ footer p {
 }
 
 /* =====================================
-   11. DARK MODE
+   11. DARK MODE - DEEP FOREST GREEN
 ===================================== */
 
 body.dark-mode {
-    --cream: #0f172a;
-    --light: #1e293b;
-    --white: #263449;
-    --primary: #cbd5e1;
-    --secondary: #a3b18a;
-    --text: #e2e8f0;
-    --sage: #647a60;
-    background: #0f172a;
-    color: #e2e8f0;
+    --primary: #dce8dc;
+    --secondary: #b4c99e;
+    --sage: #91a985;
+    --cream: #17291f;
+    --light: #20382a;
+    --white: #294333;
+    --text: #edf3e9;
+    --shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    background: #17291f;
+    color: #edf3e9;
 }
+
+/* Header dan Footer */
 
 body.dark-mode header,
 body.dark-mode footer {
-    background: #111827;
+    background: #102219;
+    color: #f3f6ef;
 }
+
+/* Logo dan navigasi */
+
+body.dark-mode .logo {
+    color: #f3f6ef;
+}
+
+body.dark-mode .nav-links a {
+    color: #edf3e9;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #b4c99e;
+}
+
+/* Hero */
+
+body.dark-mode .hero-text h1,
+body.dark-mode .hero-text h2 {
+    color: #f3f6ef;
+}
+
+body.dark-mode .hero-text h1 span,
+body.dark-mode .greeting {
+    color: #b4c99e;
+}
+
+body.dark-mode .hero-text p {
+    color: #dce8dc;
+}
+
+/* Judul dan isi section */
 
 body.dark-mode .content-section h2,
 body.dark-mode .content-section h3,
-body.dark-mode .content-section h4,
-body.dark-mode .hero-text h1,
-body.dark-mode .hero-text h2 {
-    color: #e2e8f0;
+body.dark-mode .content-section h4 {
+    color: #e5efdf;
 }
 
-body.dark-mode .button-outline {
-    color: #e2e8f0;
+body.dark-mode .content-section p {
+    color: #e0e9dc;
 }
+
+body.dark-mode .content-section:nth-of-type(even) {
+    background: #20382a;
+}
+
+/* Kartu informasi */
 
 body.dark-mode .info-card,
 body.dark-mode .experience-item,
 body.dark-mode .internship-item,
 body.dark-mode .item-cv,
-body.dark-mode .card,
-body.dark-mode .skill-card {
-    background: #1e293b;
-    color: #e2e8f0;
+body.dark-mode .card {
+    background: #294333;
+    color: #f0f4ec;
 }
 
 body.dark-mode .info-card h3,
 body.dark-mode .experience-item h3,
 body.dark-mode .internship-item h3 {
-    color: #a3b18a;
+    color: #c6d9b5;
+}
+
+body.dark-mode .info-card p,
+body.dark-mode .info-card li {
+    color: #e5ede1;
+}
+
+/* Skill cards */
+
+body.dark-mode .skill-card {
+    background: #294333;
+    color: #d5e5c7;
+}
+
+/* Links */
+
+body.dark-mode .content-section a {
+    color: #c6dfa9;
+}
+
+/* Buttons */
+
+body.dark-mode #theme-toggle {
+    background: #355640;
+    color: #ffffff;
+    border-color: #9eb58e;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background: #b4c99e;
+    color: #17291f;
+}
+
+body.dark-mode .button {
+    background: #66865e;
+    color: #ffffff;
+}
+
+body.dark-mode .button:hover {
+    background: #8da77d;
+    color: #102219;
+}
+
+body.dark-mode .button-outline {
+    background: transparent;
+    color: #e5efdf;
+    border-color: #b4c99e;
+}
+
+body.dark-mode .button-outline:hover {
+    background: #66865e;
+    color: #ffffff;
+}
+
+/* Foto profil */
+
+body.dark-mode .foto-profil {
+    border-color: #91a985;
 }
 
 /* =====================================
