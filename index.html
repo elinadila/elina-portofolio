@@ -1,22 +1,30 @@
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Professional portfolio of Elin Nadila Widodo, Management Student with experience in Manufacturing Operations and Administration.">
+
     <title>Elin Nadila Widodo | Professional Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVIGASI -->
+    <!-- NAVIGATION -->
     <header>
         <nav class="navbar">
-
             <a href="#home" class="logo">ELINA</a>
 
-            <div class="nav-links">
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
@@ -26,15 +34,16 @@
                 <a href="#achievements">Achievements</a>
                 <a href="#organization">Organization</a>
                 <a href="#languages">Languages</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </div>
 
-            <button id="theme-toggle">🌙 Dark Mode</button>
-
+            <button id="theme-toggle" class="theme-toggle">
+                🌙 Dark Mode
+            </button>
         </nav>
     </header>
 
-    <!-- KONTEN UTAMA -->
     <main>
 
         <!-- HOME -->
@@ -42,7 +51,7 @@
 
             <div class="hero-image">
                 <img src="profil.webp"
-                     alt="Foto Profil Elin Nadila Widodo"
+                     alt="Professional portrait of Elin Nadila Widodo"
                      class="foto-profil">
             </div>
 
@@ -52,39 +61,60 @@
                     WELCOME TO MY PROFESSIONAL PORTFOLIO
                 </p>
 
-                <h1>Hello, I'm <span>Elin Nadila Widodo</span></h1>
+                <h1>
+                    Hello, I'm <span>Elin Nadila Widodo</span>
+                </h1>
 
                 <h2>
-                    Management Student | Manufacturing Operations | Administration
+                    Management Student |
+                    Manufacturing Operations |
+                    Administration & Business Support
                 </h2>
 
                 <p>
-                    A dedicated professional with over six years of experience
-                    in manufacturing operations and administrative support.
-                    Currently pursuing a Bachelor's degree in Management
-                    at Universitas Terbuka, with a strong interest in
+                    A dedicated professional with over six years of
+                    experience in manufacturing operations and previous
+                    experience in administrative support. Currently
+                    pursuing a Bachelor's degree in Management at
+                    Universitas Terbuka, with an interest in
                     organizational development and business operations.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#about" class="button">Explore My Profile</a>
-                    <a href="#contact" class="button button-outline">Contact Me</a>
+                    <a href="#about" class="button">
+                        Explore My Profile
+                    </a>
+
+                    <a href="Elin-Nadila-Widodo-CV.pdf"
+                       class="button button-outline"
+                       download>
+                        Download My CV
+                    </a>
+
+                    <a href="#contact" class="button button-outline">
+                        Contact Me
+                    </a>
                 </div>
 
             </div>
         </section>
 
-        <!-- ABOUT ME -->
+        <!-- ABOUT -->
         <section id="about" class="content-section">
 
             <h2>About Me</h2>
 
-            <p>
-                Active Bachelor of Management student at Universitas Terbuka
-                with over 6 years of experience in manufacturing operations
-                and previous experience in administrative support.
-                Skilled in document management, data processing,
-                report preparation, operational monitoring, and team coordination.
+            <p class="section-description">
+                I am an active Bachelor of Management student at
+                Universitas Terbuka with over six years of experience
+                in manufacturing operations and previous experience
+                in administrative support.
+                <br><br>
+                My professional background has helped me develop
+                responsibility, discipline, teamwork, communication,
+                and organizational skills. I am interested in
+                organizational development, administration,
+                business operations, and continuous learning.
             </p>
 
         </section>
@@ -124,10 +154,11 @@
                     <p>September 2020 – Present</p>
 
                     <ul>
-                        <li>Operate and monitor press machines according to production procedures.</li>
-                        <li>Monitor production processes and report operational issues.</li>
-                        <li>Maintain productivity, accuracy, and daily production targets.</li>
-                        <li>Coordinate with team members and related departments.</li>
+                        <li>Operate and monitor press machines according to production procedures, quality requirements, and safety standards.</li>
+                        <li>Monitor production processes and report machine problems or operational issues to supervisors.</li>
+                        <li>Maintain productivity, accuracy, discipline, and daily production targets.</li>
+                        <li>Coordinate with team members and related departments to ensure smooth daily operations.</li>
+                        <li>Demonstrate teamwork, responsibility, and adaptability in a manufacturing environment.</li>
                     </ul>
                 </div>
 
@@ -137,10 +168,11 @@
                     <p>2018 – 2019</p>
 
                     <ul>
-                        <li>Managed administrative documents and archives.</li>
-                        <li>Prepared reports and supported school activities.</li>
+                        <li>Managed administrative documents, archives, correspondence, and registration records.</li>
+                        <li>Prepared regular reports and supported school activities, examinations, and meetings.</li>
                         <li>Assisted with data processing and administrative services.</li>
-                        <li>Maintained organized documentation.</li>
+                        <li>Monitored administrative facilities and maintained organized documentation.</li>
+                        <li>Supported communication and coordination during school activities.</li>
                     </ul>
                 </div>
 
@@ -160,16 +192,16 @@
                     <p>2017 | 3 Months</p>
 
                     <ul>
-                        <li>Assisted with daily administrative activities.</li>
-                        <li>Supported data processing and documentation.</li>
-                        <li>Organized files and maintained accurate records.</li>
+                        <li>Assisted with daily administrative activities and document management.</li>
+                        <li>Supported basic data processing and administrative documentation.</li>
+                        <li>Helped organize files and maintain accurate records.</li>
                     </ul>
                 </div>
 
             </div>
         </section>
 
-        <!-- TECHNICAL SKILLS -->
+        <!-- SKILLS -->
         <section id="skills" class="content-section">
 
             <h2>Technical Skills</h2>
@@ -177,7 +209,7 @@
             <div class="skills-container">
                 <div class="skill-card">Microsoft Word</div>
                 <div class="skill-card">Microsoft PowerPoint</div>
-                <div class="skill-card">Microsoft Excel</div>
+                <div class="skill-card">Microsoft Excel (Basic)</div>
                 <div class="skill-card">Administrative Management</div>
                 <div class="skill-card">Data Processing</div>
                 <div class="skill-card">Document Management</div>
@@ -189,7 +221,7 @@
 
             <div class="skills-container">
                 <div class="skill-card">Communication</div>
-                <div class="skill-card">Teamwork</div>
+                <div class="skill-card">Teamwork & Collaboration</div>
                 <div class="skill-card">Coordination</div>
                 <div class="skill-card">Time Management</div>
                 <div class="skill-card">Attention to Detail</div>
@@ -221,8 +253,7 @@
 
                 <div class="info-card">
                     <h3>3rd Runner-Up</h3>
-                    <p>Seleksi Pekan Olahraga Nasional</p>
-                    <p>2016</p>
+                    <p>Seleksi Pekan Olahraga Nasional, 2016</p>
                 </div>
 
             </div>
@@ -268,28 +299,101 @@
 
         </section>
 
+        <!-- PORTFOLIO HIGHLIGHTS -->
+        <section id="portfolio" class="content-section">
+
+            <h2>Portfolio Highlights</h2>
+
+            <p class="section-description">
+                Selected examples of my academic and professional
+                work demonstrating my administrative, documentation,
+                presentation, and data processing skills.
+            </p>
+
+            <div class="info-container">
+
+                <div class="info-card">
+                    <h3>Administrative Documentation</h3>
+                    <p>
+                        Examples of document preparation,
+                        correspondence, and administrative organization.
+                    </p>
+                    <span class="portfolio-label">
+                        Administrative Skills
+                    </span>
+                </div>
+
+                <div class="info-card">
+                    <h3>Data Processing</h3>
+                    <p>
+                        Examples of basic data organization,
+                        spreadsheet preparation, and information management.
+                    </p>
+                    <span class="portfolio-label">
+                        Data Management
+                    </span>
+                </div>
+
+                <div class="info-card">
+                    <h3>Presentation Projects</h3>
+                    <p>
+                        Selected academic or professional presentations
+                        created using Microsoft PowerPoint.
+                    </p>
+                    <span class="portfolio-label">
+                        Presentation Skills
+                    </span>
+                </div>
+
+            </div>
+
+            <p class="portfolio-note">
+                Work samples can be added here as they become available.
+            </p>
+
+        </section>
+
         <!-- CONTACT -->
         <section id="contact" class="content-section">
 
             <h2>Let's Connect</h2>
 
-            <p>Jepara, Central Java, Indonesia</p>
-
             <p>
-                Email:
-                <a href="mailto:elinadilaw@gmail.com">
-                    elinadilaw@gmail.com
-                </a>
+                I am open to professional opportunities,
+                collaboration, and career development.
             </p>
 
-            <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/elin-nadila-widodo-308590425/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Elin Nadila Widodo
-                </a>
-            </p>
+            <div class="contact-details">
+
+                <p>
+                    <strong>Location:</strong>
+                    Jepara, Central Java, Indonesia
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:+6281477017570">
+                        +62 814-7701-7570
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:elinadilaw@gmail.com">
+                        elinadilaw@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/elin-nadila-widodo-308590425/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Elin Nadila Widodo
+                    </a>
+                </p>
+
+            </div>
 
         </section>
 
