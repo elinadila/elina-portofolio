@@ -123,8 +123,8 @@ header {
 }
 
 .foto-profil {
-    width: 280px;
-    height: 280px;
+    width: 380px;
+    height: 380px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
