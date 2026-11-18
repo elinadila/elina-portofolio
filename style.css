@@ -124,11 +124,12 @@ header {
 
 .foto-profil {
     width: 280px;
-    height: 330px;
+    height: 280px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 20px;
-    border: 6px solid var(--sage);
-    box-shadow: var(--shadow);
+    object-position: center;
+    display: block;
+    border: 4px solid #dce8df;
 }
 
 .hero-text {
